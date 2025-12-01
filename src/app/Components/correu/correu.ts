@@ -17,4 +17,8 @@ export class Correu {
       destinatari: "david.gelma@institutvidreres.cat"
     }
   }
+
+  comptarNumCaractersTitol(){
+    return this.correu.titol.length;
+  }
 }
