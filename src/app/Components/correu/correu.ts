@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class Correu {
   correu: any
-
+  comptador_titol = 0
   constructor() {
     this.correu = {
       titol: "Pràctica Correu Angular8 Proba",
@@ -16,9 +16,15 @@ export class Correu {
       emisor: "david.gelma@institutvidreres.cat",
       destinatari: "david.gelma@institutvidreres.cat"
     }
+    this.comptador_titol = this.correu.titol.length
   }
 
   comptarNumCaractersTitol(){
     return this.correu.titol.length;
   }
+
+  augmentarNumCaracters() {
+    this.comptador_titol++
+  }
+
 }
