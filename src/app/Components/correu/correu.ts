@@ -11,7 +11,7 @@ export class Correu {
 
   constructor() {
     this.correu = {
-      titol: "Pràctica Correu Angular8",
+      titol: "Pràctica Correu Angular8 Proba",
       cos: "Hola aixo es un correu",
       emisor: "david.gelma@institutvidreres.cat",
       destinatari: "david.gelma@institutvidreres.cat"
