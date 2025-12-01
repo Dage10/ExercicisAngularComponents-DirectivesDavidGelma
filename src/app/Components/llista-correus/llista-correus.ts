@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import {NgClass, NgFor} from '@angular/common';
+import {NgClass, NgFor, NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-llista-correus',
-  imports: [NgFor, NgClass],
+  imports: [NgFor, NgClass, NgIf],
   templateUrl: './llista-correus.html',
   styleUrl: './llista-correus.css',
 })
