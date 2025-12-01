@@ -14,6 +14,9 @@
   <p>A: {{correus[1].destinatari}}</p>
 </div>
 
+<p>Correus llegits: {{numero_llegits}}</p>
+<p>Correus no llegits: {{numero_no_llegits}}</p>
+
 <h1>Amb for</h1>
 <div *ngFor="let correu of correus">
   <div *ngIf="!correu.llegit">
@@ -25,4 +28,6 @@
     <p>A: {{correu.destinatari}}</p>
   </div>
 </div>
+<p>Correus llegits: {{numero_llegits}}</p>
+<p>Correus no llegits: {{numero_no_llegits}}</p>
 
