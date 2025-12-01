@@ -1,18 +1,20 @@
 <h1>Sense for</h1>
 
-<h2>{{correus[0].titol}}</h2>
+<h2 [ngClass]="correus[0].llegit ? 'llegit': 'no-llegit'">{{correus[0].titol}}</h2>
 <p>{{correus[0].cos}}</p>
 <p>De: {{correus[0].emisor}}</p>
 <p>A: {{correus[0].destinatari}}</p>
 
-<h2>{{correus[1].titol}}</h2>
+<h2 [ngClass]="correus[1].llegit ? 'llegit': 'no-llegit'">{{correus[1].titol}}</h2>
 <p>{{correus[1].cos}}</p>
 <p>De: {{correus[1].emisor}}</p>
 <p>A: {{correus[1].destinatari}}</p>
 
 <h1>Amb for</h1>
 <div *ngFor="let correu of correus">
-  <h2>{{correu.titol}}</h2>
+  <h2 [ngClass]="correu.llegit ? 'llegit': 'no-llegit'">
+    {{correu.titol}}
+  </h2>
   <p>{{correu.cos}}</p>
   <p>De: {{correu.emisor}}</p>
   <p>A: {{correu.destinatari}}</p>

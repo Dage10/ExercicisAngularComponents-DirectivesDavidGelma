@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import {NgFor} from '@angular/common';
+import {NgClass, NgFor} from '@angular/common';
 
 @Component({
   selector: 'app-llista-correus',
-  imports: [NgFor],
+  imports: [NgFor, NgClass],
   templateUrl: './llista-correus.html',
   styleUrl: './llista-correus.css',
 })
@@ -15,13 +15,15 @@ export class LlistaCorreus {
       titol: "Pràctica Correu Angular8 Proba",
       cos: "Hola aixo es un correu",
       emisor: "david.gelma@institutvidreres.cat",
-      destinatari: "david.gelma@institutvidreres.cat"
+      destinatari: "david.gelma@institutvidreres.cat",
+      llegit: true,
     }
     const correu2 = {
       titol: "Pràctica Correu Angular8 Proba2",
       cos: "Hola aixo es un correu",
       emisor: "david.gelma@institutvidreres.cat",
-      destinatari: "david.gelma@institutvidreres.cat"
+      destinatari: "david.gelma@institutvidreres.cat",
+      llegit: false
     }
     this.correus = [];
     this.correus.push(correu);
